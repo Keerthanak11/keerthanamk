@@ -1,0 +1,191 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    color: #222;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+}
+body{
+    padding: 2rem 2.5rem;
+    background:linear-gradient(#888,salmon)
+}
+h1{
+    font-size: 2rem;
+    text-transform: uppercase;
+   
+}
+h2{
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    border-top: 1px solid #888;
+    border-bottom: 1px solid #888;
+    padding: 0.5rem 0;
+    margin-bottom: 2rem;
+}
+h3{
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: salmon;
+    margin-bottom: 1rem;
+}
+p{
+    line-height: 1.5;
+}
+
+section + section{
+    margin-top: 1rem;
+
+}
+a{
+    text-decoration: none;
+    color:inherit;
+    
+}
+ul{
+    list-style: none;
+}
+.profile{
+    text-align: center;
+
+}
+.profile img{
+    border-radius: 9999px;
+    width:10rem;
+    height:10rem;
+}
+.profile p{
+    color: #888;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+
+}
+
+.contact ul{
+    margin-top: -2rem;
+}
+.contact li{
+    text-align: right;
+    text-transform: uppercase;
+    padding: 1rem;
+    border-top:1px solid #888 ;
+    color: #888;
+    border-bottom:1px solid #888 ;
+    font-size: 0.8rem;
+
+}
+.fa-linkedin{
+
+   
+    color:#888;
+    
+}
+.fa-facebook{
+
+    color:#888;
+    
+}
+.fa-twitter{
+
+    
+    color:#888;
+}
+.fa-instagram{
+
+    color:#888;
+}
+.skills{
+    width: 100%;
+    max-width: 600px;
+    
+}
+.skill_name{
+font-size: 14px;
+;
+}
+
+.skill_bar{
+    height: 14px;
+    background:#424141;
+    border-radius: 3px;
+    
+}
+.skill_per{
+    height:14px;
+    background:rgb(236, 132, 120);
+    border-radius:3px;
+    position: relative;
+    animation: fillBars 2.5s 1;
+
+}
+.skill_per::before{
+    content:attr(per);
+    position:absolute;
+    background: #f1f1f1;
+    border-radius: 4px;
+    font-size: 12px;
+    top:-20px;
+    right:0;
+    transform:translateX(50%);
+}
+
+
+skill_per::after{
+    content:"";
+    position: absolute;
+    width: 10px;
+    height:10px;
+    background: #f1f1f1;
+    top:-20px;
+    right:0;
+    transform:translateX(50%) rotate(45deg);
+    border-radius: 2px;
+}
+@keyframes fillBars{
+    from{
+        width:0;
+    }
+    to{
+        width:100%;
+    }
+}
+.languages{
+    padding-top: 10px;
+}
+
+.timeline .event + .event{
+    padding-top: 1rem;
+
+
+
+}
+.event{
+    display:grid;
+    grid-template-columns: 5ch 1fr;
+}
+.content{
+    border-left: 1px solid #888;
+    padding-left: 1rem;
+    margin-left: 1rem;
+
+}
+.content > h3 + p {
+    margin-bottom: 1rem;
+    color:#333;
+}
+.resume{
+    display:grid;
+    grid-template-columns: 40% 1fr;
+    grid-gap: 4rem;
+    background-color: white;
+    padding:3rem;
+    max-width:1000px;
+    margin:auto;
+    
+}
+.list{
+    padding: 0 70px;
+
+}
